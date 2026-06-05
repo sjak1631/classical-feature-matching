@@ -1,0 +1,21 @@
+[project]
+name = "classical-feature-matching"
+version = "0.1.0"
+description = "SIFT (Scale-Invariant Feature Transform) scratch implementation in Python"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "opencv-python>=4.13.0.92",
+]
+
+[project.scripts]
+sift-demo = "main:main"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "pytest>=9.0.3",
+]

@@ -11,6 +11,7 @@ from .keypoints import detect_keypoints, localize_keypoints
 from .orientation import assign_orientations
 from .descriptors import compute_descriptors
 from .matching import match_descriptors
+from .hough import geometric_verification
 
 __all__ = [
     "build_gaussian_pyramid",
@@ -20,4 +21,5 @@ __all__ = [
     "assign_orientations",
     "compute_descriptors",
     "match_descriptors",
+    "geometric_verification",
 ]
